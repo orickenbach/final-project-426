@@ -2,12 +2,42 @@ body {
 	background-color: rgb(104, 188, 243);
 }
 
+.upper {
+	float: left;
+	top: 0%;
+	width: 1000px;
+  height: 400px;
+
+}
+
+.right-upper {
+	float: left;
+	top: 50%;
+	height: 300px;
+	width: 500px;
+}
+
+.left-lower {
+	float: left;
+	top: 0%;
+	height: 300px;
+	width: 500px;
+}
+
+.right-lower {
+	float: left;
+	top: 50%;
+	height: 300px;
+	width: 500px;
+}
+
+
 .primary-content {
 	text-align: center;
 	font-family: Helvetica, sans-serif;
 	top: 10%;
-	left: 30%;
 	right: 50%;
+	left: 50%;
 	bottom: 10%;
 	position: absolute;
 	background-color: white;
@@ -35,6 +65,119 @@ body {
 	font-size: 13px;
 	color: green;
 }
+
+.airline-search-container, .destination-search-container, .departure-search-container{
+  position: relative;
+  display: inline-block;
+  width: 185px;
+  float: left;
+}
+
+.find-flights-container {
+  position: relative;
+  display: inline-block;
+  float: left;
+  min-height: 10px;
+  max-height: 200px;
+  text-align: left;
+
+}
+
+.selected-airline, .selected-destination, .selected-departure {
+  float: right;
+  font-size: 13px;
+  margin: 0px;
+  top: 50%;
+}
+.dropdown, .destinations-dropdown, .departures-dropdown {
+   
+    position: absolute;
+    background-color: #f6f6f6;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    width: 185px;
+    min-height: 10px;
+    max-height: 200px;
+    text-align: left;
+    
+}
+
+.airline-list p, .destination-list p, .departure-list p {
+    height: 13px;
+    width: 180px;
+    font-size: 13px;
+    color: black;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    text-align: left;
+
+      
+}
+
+.destination, .departure {
+  position: relative;
+  display: inline-block;
+}
+
+.destination .airport-name {
+  visibility: hidden;
+  width: 180px;
+  background-color: rgb(104, 188, 243);
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.departure .airport-name {
+  visibility: hidden;
+  width: 180px;
+  background-color: rgb(104, 188, 243);
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.destination:hover .airport-name {
+  visibility: visible;
+}
+
+.departure:hover .airport-name {
+  visibility: visible;
+}
+
+.airline-list p:hover, .destination-list p:hover, .departure-list p:hover {
+  background-color: #ddd;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 100px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 
 .transition, form button, form .question label, form .question input[type="text"] {
   -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
