@@ -1,0 +1,435 @@
+body {
+	background-color: rgb(104, 188, 243);
+  
+}
+
+.upper {
+	float: left;
+	top: 0%;
+	width: 1000px;
+  height: 400px;
+
+}
+
+.left-upper{
+  float: left;
+  top: 50%;
+  height: 300px;
+  width: 500px;
+  align-items: center; 
+  justify-content: center;
+}
+
+.right-upper {
+	float: left;
+	top: 50%;
+	height: 300px;
+	width: 500px;
+}
+
+.left-lower {
+	float: left;
+	top: 0%;
+	height: 300px;
+	width: 500px;
+}
+
+.right-lower {
+	float: left;
+	top: 50%;
+	height: 300px;
+	width: 500px;
+}
+
+
+.primary-content {
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	top: 10%;
+  left: 25%;
+	bottom: 10%;
+	position: absolute;
+	background-color: white;
+	width:  500px;
+    height: 500px;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+}
+
+.account-main-page {
+  align-content: center;
+}
+
+.flight-table {
+  align-content: left;
+  table-layout: fixed;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.primary-title {
+	color: rgb(104, 188, 243);
+	font-family: Helvetica, sans-serif;
+	font-size: 40px; 
+	line-height: 45px; 
+	margin: 0 30px 20px; 
+	
+}
+
+#account-error {
+	font-size: 13px;
+	color: red;
+}
+
+#account-created {
+	font-size: 13px;
+	color: green;
+}
+
+.airline-search-container, .destination-search-container, .departure-search-container{
+  position: relative;
+  display: inline-block;
+  width: 185px;
+  float: left;
+}
+
+.find-flights-container {
+  position: relative;
+  display: inline-block;
+  float: left;
+  min-height: 10px;
+  max-height: 200px;
+  text-align: left;
+
+}
+
+.selected-airline, .selected-destination, .selected-departure {
+  float: right;
+  font-size: 13px;
+  margin: 0px;
+  top: 50%;
+}
+.dropdown, .destinations-dropdown, .departures-dropdown {
+   
+    position: absolute;
+    background-color: #f6f6f6;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    width: 185px;
+    min-height: 10px;
+    max-height: 200px;
+    text-align: left;
+    
+}
+
+.airline-list p, .destination-list p, .departure-list p {
+    height: 13px;
+    width: 180px;
+    font-size: 13px;
+    color: black;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    text-align: left;
+
+      
+}
+
+.destination, .departure {
+  position: relative;
+  display: inline-block;
+}
+
+.destination .airport-name{
+  visibility: hidden;
+  width: 180px;
+  background-color: rgb(104, 188, 243);
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+
+.destination:hover .airport-name {
+  visibility: visible;
+}
+
+.departure:hover .airport-name {
+  visibility: visible;
+}
+
+.airline-list p:hover, .destination-list p:hover, .departure-list p:hover {
+  background-color: #ddd;
+}
+
+
+.book-this {
+  visibility: hidden;
+  display:inline-block;
+  position:relative;
+  background-color: #ddd;
+  border-radius: 6px;
+  padding: 5px 0;
+  color: black;
+  z-index: 1;
+
+}
+
+
+#flight:hover {
+  background-color: #ddd;
+}
+
+#flight:hover .book-this {
+  visibility: visible;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 100px;
+}
+
+.select-ticket p {
+  margin: 0;
+  width: 100px;
+  height: auto;
+
+}
+
+.select-ticket {
+  margin: 0;
+  align-content: left;
+  height: 700px;
+  width: 700px;
+}
+.ticket-display {
+  float: right;
+  align-content: center;
+  height: 700px;
+  width: 150px;
+}
+
+
+.select-cabin, .select-seat-type{
+  display: inline-block;
+  max-width: 360px;
+  padding: 5;
+  height: auto;
+  align-content: left;
+  float: left;
+}
+
+ .plane-image {
+  width: 700px;
+  height: 200px;
+  display: inline-block;
+
+  padding: 5;
+  height: auto;
+  align-content: left;
+  float: left;
+ }
+
+#ticket-title {
+  float: left;
+}
+ .submit-button {
+    display: inline-block;
+    position: relative;
+    padding: 5;
+ }
+
+.select-prompt {
+  float: left;
+}
+.options, .seat-type-options {
+
+}
+
+
+.transition, form button, form .question label, form .question input[type="text"] {
+  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+  font-weight: light;
+  -webkit-font-smoothing: antialiased;
+}
+
+form {
+  position: absolute;
+  display: inline-block;
+  max-width: 700px;
+  min-width: 500px;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  background-color: white;
+  border-radius: 40px;
+  left: 50%;
+  top: 35%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+form .create-account {
+	display: block;
+	text-align: center;
+
+}
+
+form button{
+  margin-top: 35px;
+  background-color: white;
+  border: 1px solid rgb(104, 188, 243);
+  line-height: 0;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: rgb(104, 188, 243);
+  font-weight: 2000;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+form button:hover, form button:focus {
+  color: white;
+  background-color: rgb(104, 188, 243);
+}
+
+.find-seats, .home {
+  margin-top: 0;
+  background-color: white;
+  border: 1px solid rgb(104, 188, 243);
+  line-height: 0;
+  font-size: 13px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  border-radius: 60px;
+  color: rgb(104, 188, 243);
+  font-weight: 2000;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.get-ticket {
+  margin-top: 0;
+  background-color: white;
+  border: 1px solid rgb(104, 188, 243);
+  line-height: 0;
+  font-size: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 7px;
+  border-radius: 60px;
+  color: rgb(104, 188, 243);
+  font-weight: 2000;
+  letter-spacing: 0.01em;
+  align-self: center;
+  position: relative;
+  z-index: 1;
+}
+
+.find-seats:hover, .find-seats:focus, .home:hover, .home:focus, .get-ticket:hover, .get-ticket:focus {
+  color: white;
+  background-color: rgb(104, 188, 243);
+}
+
+
+.seat-chart {
+  position: relative;
+  /*transform: rotate(90deg);*/
+  height: 700px;
+  width: 200px;
+  float: left;
+  top: 0%;
+}
+
+form .question {
+  position: relative;
+  padding: 10px 0;
+}
+form .question:first-of-type {
+  padding-top: 0;
+}
+form .question:last-of-type {
+  padding-bottom: 0;
+}
+form .question label {
+  transform-origin: left center;
+  color: rgb(104, 188, 243);
+  font-weight: 2000;
+  letter-spacing: 0.01em;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 2;
+  pointer-events: none;
+}
+form .question input[type="text"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid rgb(104, 188, 243);
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: rgb(104, 188, 243);
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+form .question input[type="text"]:focus {
+  outline: none;
+  background: rgb(104, 188, 243);
+  color: white;
+  margin-top: 30px;
+}
+form .question input[type="text"]:valid {
+  margin-top: 30px;
+}
+form .question input[type="text"]:focus ~ label {
+  -moz-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+}
+form .question input[type="text"]:valid ~ label {
+  text-transform: uppercase;
+  font-style: italic;
+  -moz-transform: translate(5px, -35px) scale(0.6);
+  -ms-transform: translate(5px, -35px) scale(0.6);
+  -webkit-transform: translate(5px, -35px) scale(0.6);
+  transform: translate(5px, -35px) scale(0.6);
+}

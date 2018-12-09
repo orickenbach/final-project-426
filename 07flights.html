@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+    <link rel="stylesheet" type="text/css" href="07flights.css"> 
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="07flights.js"></script>
+
+
+    <title>Database Seed Script</title>
+    <body>
+    <main>
+      <section class="loading-section">
+        <div class="primary-content">
+          <div class="login-body">
+              <h1 class="primary-title" id="welcome"><br>
+                Welcome to Cloud <img src="data:image/png;base64,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"></p> 
+              </h1>
+              <h1 class="primary-title" id="newuser"><br>
+                New Cloud User <img src="data:image/png;base64,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"></p> 
+             
+              </h1>
+
+              	<p class ="login-title">Book and track flights!</p>
+              
+             		<p class ="create-account-title"></p> 
+
+
+             
+              	<form>
+              		<b id="account-created"></b>
+              		<b id="account-error"></b>
+    			  <div id="login-page">
+    				  <div class="question" id="username"> 
+    				    <input id="user" type="text" required/>
+    				    <label>Username</label>
+    				  </div>
+    				  <div class="question" id="password">
+    				    <input id="pass" type="text" required/>
+    				    <label>Password</label>
+    				  </div>
+    			  </div>
+    			  <div class="create-account-page">
+    				  <div class="question" id="choose-username">
+    				    <input  id="chosen-username" type="text" required/>
+    				    <label>Choose a Username</label>
+    			  	  </div>
+    				  <div class="question" id="choose-password">
+    				    <input id="chosen-password" type="text" required/>
+    				    <label>Choose a Password</label>
+    				  </div>
+    			  </div>
+    			  <div class="buttons-container">
+    			 	 <button type="button" class="login">Login</button>
+    			 	 <button type="button" class="change-password">Change Password</button>
+    			 	 <button type="button" class="go-to-create-account-page">Create an account</button>
+    			 	 <button type="button" class="make-account">Create Account</button>
+    			 	 <button type="button" class="go-to-login-page">Return to Login Page</button>
+    			  </div>
+    			</form>
+
+        </div>
+
+        <div class = "account-main-page">
+            <div class = "account-main-page-title"></div>
+          <!--  <div class = "upper"></div> -->
+            <div class = "left-upper"></div>
+            <div class = "right-upper"></div>
+            <div class = "left-lower"></div>
+            <div class = "right-lower"></div>
+        </div>
+        </div>
+      </section>
+    </body>
+
+</html>
